@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Hello reports!</h3>
+
+<table>
+<tr>
+  <th>Id</th>
+  <th>StationId</th>
+  <th>LicencePlate</th>
+  <th>TimeStamp</th>
+ </tr>
+ <tr th:each="toll : ${tolls}">
+  <td th:text="${toll.Id}"></td>
+  <td th:text="${toll.stationId}"></td>
+  <td th:text="${toll.licenseplate}"></td>
+  <td th:text="${toll.timestamp}"></td>
+ </tr>
+ 
+ 
+</table>
+</body>
+</html>
