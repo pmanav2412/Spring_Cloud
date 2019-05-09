@@ -1,0 +1,14 @@
+
+---
+server:
+  port: 8888
+spring:
+  security:
+    user:
+      name: manavpatel
+      password: manavpatel
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pmanav2412/Spring_Cloud_Config
